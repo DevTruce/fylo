@@ -5,6 +5,8 @@
 *::after {
   padding: 0;
   margin: 0;
+
+  //   border: 1px solid red;
 }
 
 html {
@@ -21,4 +23,6 @@ body {
   font-weight: 400;
 
   color: $color-primary;
+
+  //   padding: 7rem;
 }

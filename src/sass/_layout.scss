@@ -1,2 +1,328 @@
 //////////////////////////////////////////////////
-//
+// HEADER
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 7rem 7rem 0 7rem;
+  margin-bottom: 10rem;
+
+  &__links {
+    &--link {
+      &:not(:last-child) {
+        margin-right: 5rem;
+      }
+
+      &:visited,
+      &:link {
+        text-decoration: none;
+
+        color: $color-primary;
+      }
+    }
+  }
+}
+
+//////////////////////////////////////////////////
+// MAIN CONTENT
+
+.main {
+  padding: 0 7rem 0 7rem;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 15rem;
+  }
+
+  &__left {
+  }
+
+  &__header {
+    font-size: $font-huge;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    font-family: "Raleway";
+    width: 95%;
+  }
+
+  &__text {
+    width: 85%;
+    margin: 3rem 0;
+  }
+
+  &__email {
+  }
+
+  &__right {
+  }
+
+  &__img {
+    display: block;
+    width: 64rem;
+    height: 47rem;
+  }
+
+  &__btn {
+    background-color: $color-tertiary;
+    padding: 1.2rem 6rem;
+    color: $color-grey--1;
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+    font-family: "Raleway";
+    font-weight: 700;
+  }
+}
+
+.hero input[type="email"] {
+  width: 50%;
+  padding: 1.4rem 2.2rem;
+  margin: 0.8rem 0;
+  display: inline-block;
+  border: 0.1rem solid $color-primary;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+}
+
+.productive {
+  background-image: url(../imgs/bg-curve-desktop.svg);
+  //   background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+
+  padding-top: 10rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20rem;
+
+  &:not(:last-child) {
+    margin-bottom: 15rem;
+  }
+
+  &__left {
+  }
+
+  &__header {
+    font-size: $font-large;
+    font-weight: 700;
+    font-family: "Raleway";
+  }
+
+  &__text--1 {
+    width: 85%;
+    margin: 3rem 0 2rem 0;
+  }
+
+  &__text--2 {
+    width: 85%;
+    margin-bottom: 1.5rem;
+  }
+
+  &__email {
+  }
+
+  &__right {
+  }
+
+  &__img {
+    display: block;
+    width: 64rem;
+    height: 47rem;
+  }
+
+  &__link {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+
+    img {
+      padding-left: 0.7rem;
+    }
+
+    &:link,
+    &:visited {
+      color: $color-cyan;
+      text-decoration: none;
+      border-bottom: 1px solid $color-cyan;
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  &__quote {
+    line-height: 1.5;
+    width: 27rem;
+    padding: 3rem;
+    background-color: $color-grey--1;
+    border-radius: 0.7rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    &--text {
+      margin: 0 0 1.5rem 0;
+      font-size: 1.3rem;
+    }
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+
+    &--img {
+      height: 3.2rem;
+      width: 3.2rem;
+      border-radius: 50%;
+      margin-right: 0.7rem;
+    }
+  }
+
+  &__username {
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+
+    span {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+//////////////////////////////////////////////////
+// CTA
+
+.cta {
+  background-color: $color-secondary;
+  color: $color-grey--1;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10rem 7rem 7rem 7rem;
+
+  &__header {
+    margin-bottom: 3rem;
+    font-size: $font-large;
+    font-weight: 700;
+    font-family: "Raleway";
+  }
+  &__left {
+    width: 50%;
+  }
+
+  &__text {
+    width: 75%;
+  }
+
+  &__right {
+    width: 50%;
+  }
+
+  &__input {
+  }
+
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: max-content;
+
+    background-color: $color-tertiary;
+    padding: 1.5rem 6rem;
+    color: $color-grey--1;
+    border-radius: 0.5rem;
+
+    font-size: 1.4rem;
+    font-family: "Raleway";
+    font-weight: 700;
+  }
+}
+
+.cta input[type="email"] {
+  width: 75%;
+  padding: 1.4rem 2.2rem;
+  margin: 0.8rem 0;
+  display: inline-block;
+  border: 0.1rem solid $color-primary;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+}
+
+//////////////////////////////////////////////////
+// FOOTER
+
+.footer {
+  color: $color-grey--1;
+  background-color: $color-primary;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10rem 7rem 7rem 7rem;
+  line-height: 2.5;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 5rem;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  &__img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+      brightness(1000%) contrast(102%);
+
+    // width: 13.5rem;
+    // height: 3.9rem;
+  }
+
+  &__phone {
+  }
+
+  &__email {
+  }
+
+  &__icon {
+  }
+
+  &__link {
+    &:active,
+    &:link {
+      text-decoration: none;
+      color: $color-grey--1;
+    }
+  }
+
+  &__socials {
+    &:active,
+    &:link {
+      text-decoration: none;
+      color: $color-grey--1;
+    }
+
+    img {
+    }
+  }
+}
+
+//////////////////////////////////////////////////
+// INPUT PLACEHOLDER
+::placeholder {
+  opacity: 0.5;
+}
