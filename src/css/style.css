@@ -11,6 +11,16 @@ html {
   font-size: 62.5%;
   box-sizing: inherit;
 }
+@media only screen and (max-width: 80em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 65em) {
+  html {
+    font-size: 40%;
+  }
+}
 
 body {
   min-height: 100vh;
@@ -48,8 +58,21 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+@media only screen and (max-width: 51.25em) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
 .hero:not(:last-child) {
   margin-bottom: 15rem;
+}
+@media only screen and (max-width: 51.25em) {
+  .hero__left {
+    order: 2;
+  }
 }
 .hero__header {
   font-size: 4rem;
@@ -62,6 +85,17 @@ body {
   width: 85%;
   margin: 3rem 0;
 }
+@media only screen and (max-width: 51.25em) {
+  .hero__email {
+    margin: 0;
+    margin-bottom: 3rem;
+  }
+}
+@media only screen and (max-width: 51.25em) {
+  .hero__right {
+    order: 1;
+  }
+}
 .hero__img {
   display: block;
   width: 64rem;
@@ -69,12 +103,19 @@ body {
 }
 .hero__btn {
   background-color: hsl(224, 93%, 58%);
-  padding: 1.2rem 6rem;
+  padding: 2rem 6rem;
   color: hsl(240, 80%, 98%);
   border-radius: 0.5rem;
   font-size: 1.4rem;
   font-family: "Raleway";
   font-weight: 700;
+}
+@media only screen and (max-width: 51.25em) {
+  .hero__btn {
+    display: block;
+    width: 43%;
+    margin: 0 auto;
+  }
 }
 .hero__btn:hover, .hero__btn:focus {
   filter: brightness(125%);
@@ -91,8 +132,21 @@ body {
   justify-content: space-between;
   padding-bottom: 20rem;
 }
+@media only screen and (max-width: 51.25em) {
+  .productive {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
 .productive:not(:last-child) {
   margin-bottom: 15rem;
+}
+@media only screen and (max-width: 51.25em) {
+  .productive__left {
+    order: 2;
+  }
 }
 .productive__header {
   font-size: 3.2rem;
@@ -106,6 +160,11 @@ body {
 .productive__text--2 {
   width: 85%;
   margin-bottom: 1.5rem;
+}
+@media only screen and (max-width: 51.25em) {
+  .productive__right {
+    order: 1;
+  }
 }
 .productive__img {
   display: block;

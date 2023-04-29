@@ -42,11 +42,21 @@
   align-items: center;
   justify-content: space-between;
 
+  @include respond(medium) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
   &:not(:last-child) {
     margin-bottom: 15rem;
   }
 
   &__left {
+    @include respond(medium) {
+      order: 2;
+    }
   }
 
   &__header {
@@ -63,9 +73,16 @@
   }
 
   &__email {
+    @include respond(medium) {
+      margin: 0;
+      margin-bottom: 3rem;
+    }
   }
 
   &__right {
+    @include respond(medium) {
+      order: 1;
+    }
   }
 
   &__img {
@@ -76,12 +93,18 @@
 
   &__btn {
     background-color: $color-tertiary;
-    padding: 1.2rem 6rem;
+    padding: 2rem 6rem;
     color: $color-grey--1;
     border-radius: 0.5rem;
     font-size: 1.4rem;
     font-family: "Raleway";
     font-weight: 700;
+
+    @include respond(medium) {
+      display: block;
+      width: 43%;
+      margin: 0 auto;
+    }
 
     &:hover,
     &:focus {
@@ -104,11 +127,21 @@
   justify-content: space-between;
   padding-bottom: 20rem;
 
+  @include respond(medium) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
   &:not(:last-child) {
     margin-bottom: 15rem;
   }
 
   &__left {
+    @include respond(medium) {
+      order: 2;
+    }
   }
 
   &__header {
@@ -131,6 +164,9 @@
   }
 
   &__right {
+    @include respond(medium) {
+      order: 1;
+    }
   }
 
   &__img {

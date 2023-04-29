@@ -12,6 +12,14 @@
 html {
   font-size: 62.5%; // 1rem = 10px
   box-sizing: inherit;
+
+  @include respond(very-large) {
+    font-size: 50%;
+  }
+
+  @include respond(large) {
+    font-size: 40%;
+  }
 }
 
 body {

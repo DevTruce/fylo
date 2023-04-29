@@ -18,3 +18,25 @@ $font-huge: 4rem;
 
 //////////////////////////////////////////////////
 // MEDIA QUERY MANAGER
+@mixin respond($breakpoint) {
+  @if $breakpoint == medium {
+    @media only screen and (max-width: 51.25em) {
+      // 820px
+      @content;
+    }
+  }
+
+  @if $breakpoint == large {
+    @media only screen and (max-width: 65em) {
+      // 1040px
+      @content;
+    }
+  }
+
+  @if $breakpoint == very-large {
+    @media only screen and (max-width: 80em) {
+      // 1280px
+      @content;
+    }
+  }
+}
