@@ -267,7 +267,7 @@
   align-items: flex-start;
   justify-content: center;
   padding: 10rem 7rem 7rem 7rem;
-  line-height: 2.5;
+  line-height: 2.25;
 
   &__content {
     display: flex;
@@ -299,6 +299,7 @@
   }
 
   &__icon {
+    margin-right: 1.5rem;
   }
 
   &__link {
@@ -309,14 +310,26 @@
     }
   }
 
-  &__socials {
-    &:active,
-    &:link {
-      text-decoration: none;
-      color: $color-grey--1;
-    }
+  &__social {
+    display: flex;
 
-    img {
+    &--socials {
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+      &:active,
+      &:link {
+        text-decoration: none;
+        color: $color-grey--1;
+      }
+
+      img {
+        display: block;
+        height: 3.2rem;
+        width: 3.2rem;
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+          brightness(1000%) contrast(102%);
+      }
     }
   }
 }
