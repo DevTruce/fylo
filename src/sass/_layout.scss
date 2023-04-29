@@ -21,6 +21,11 @@
 
         color: $color-primary;
       }
+
+      &:hover,
+      &:focus {
+        color: $color-cyan;
+      }
     }
   }
 }
@@ -77,17 +82,13 @@
     font-size: 1.4rem;
     font-family: "Raleway";
     font-weight: 700;
-  }
-}
 
-.hero input[type="email"] {
-  width: 50%;
-  padding: 1.4rem 2.2rem;
-  margin: 0.8rem 0;
-  display: inline-block;
-  border: 0.1rem solid $color-primary;
-  border-radius: 0.4rem;
-  box-sizing: border-box;
+    &:hover,
+    &:focus {
+      filter: brightness(125%);
+      cursor: pointer;
+    }
+  }
 }
 
 .productive {
@@ -154,6 +155,11 @@
       text-decoration: none;
       border-bottom: 1px solid $color-cyan;
       padding-bottom: 0.5rem;
+    }
+
+    &:hover,
+    &:focus {
+      filter: brightness(125%);
     }
   }
 
@@ -243,17 +249,13 @@
     font-size: 1.4rem;
     font-family: "Raleway";
     font-weight: 700;
-  }
-}
 
-.cta input[type="email"] {
-  width: 75%;
-  padding: 1.4rem 2.2rem;
-  margin: 0.8rem 0;
-  display: inline-block;
-  border: 0.1rem solid $color-primary;
-  border-radius: 0.4rem;
-  box-sizing: border-box;
+    &:hover,
+    &:focus {
+      filter: brightness(125%);
+      cursor: pointer;
+    }
+  }
 }
 
 //////////////////////////////////////////////////
@@ -307,6 +309,13 @@
     &:link {
       text-decoration: none;
       color: $color-grey--1;
+      cursor: pointer;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-tertiary;
+      cursor: pointer;
     }
   }
 
@@ -321,6 +330,12 @@
       &:link {
         text-decoration: none;
         color: $color-grey--1;
+      }
+
+      &:hover,
+      &:focus {
+        filter: brightness(0) saturate(100%) invert(33%) sepia(66%)
+          saturate(4166%) hue-rotate(218deg) brightness(99%) contrast(97%);
       }
 
       img {
@@ -338,4 +353,43 @@
 // INPUT PLACEHOLDER
 ::placeholder {
   opacity: 0.5;
+  position: relative;
+
+  &::before {
+    content: "Please check your email!";
+    display: block;
+    font-size: $font-small;
+    width: 100%;
+    height: 100%;
+    color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+}
+
+input {
+  padding: 1.4rem 2.2rem;
+  margin: 0.8rem 0;
+  display: inline-block;
+  border: 0.1rem solid $color-primary;
+  border-radius: 0.4rem;
+  outline: none;
+  transition: border-color 0.5s ease-out;
+}
+
+// input:required:focus:valid {
+// }
+
+input:focus:invalid {
+  border: 0.1rem solid red;
+}
+
+.hero input[type="email"] {
+  width: 50%;
+}
+
+.cta input[type="email"] {
+  width: 75%;
 }
