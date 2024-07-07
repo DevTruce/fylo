@@ -1,0 +1,57 @@
+//////////////////////////////////////////////////
+// COLORS
+$color-primary: hsl(243, 87%, 12%);
+$color-secondary: hsl(238, 22%, 44%);
+$color-tertiary: hsl(224, 93%, 58%);
+$color-cyan: hsl(170, 45%, 43%);
+
+$color-grey--1: hsl(240, 80%, 98%);
+$color-grey--2: hsl(0, 0%, 75%);
+
+//////////////////////////////////////////////////
+// FONTS
+
+$font-small: 1.6rem;
+$font-medium: 1.7rem;
+$font-large: 3.2rem;
+$font-huge: 4rem;
+
+//////////////////////////////////////////////////
+// MEDIA QUERY MANAGER
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == very-small {
+    @media only screen and (max-width: 18.125em) {
+      // 290px
+      @content;
+    }
+  }
+
+  @if $breakpoint == small {
+    @media only screen and (max-width: 29.8125em) {
+      // 477px
+      @content;
+    }
+  }
+
+  @if $breakpoint == medium {
+    @media only screen and (max-width: 47.5em) {
+      // 760px
+      @content;
+    }
+  }
+
+  @if $breakpoint == large {
+    @media only screen and (max-width: 65em) {
+      // 1040px
+      @content;
+    }
+  }
+
+  @if $breakpoint == very-large {
+    @media only screen and (max-width: 80em) {
+      // 1280px
+      @content;
+    }
+  }
+}
