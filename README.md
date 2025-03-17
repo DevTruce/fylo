@@ -12,7 +12,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/DevTruce/fylo">
-    <img src="src/imgs/logo.png" alt="Logo" width="80" height="80">
+    <img src="src/images/favicon-32x32.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Fylo Landing Page</h3>
@@ -29,8 +29,10 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](product-link)
-[![Product Name Screen Shot][product-screenshot2]](product-link)
+[![Fylo Screen Shot][product-screenshot]](product-link)
+[![Fylo Shot][product-screenshot2]](product-link)
+[![Fylo Screen Shot][product-screenshot3]](product-link)
+[![Fylo Screen Shot][product-screenshot4]](product-link)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -69,8 +71,10 @@ Discord: [xzypher.]()
 
 <!-- ## Project ## -->
 
-[product-screenshot]: src/imgs/project-view1.png
-[product-screenshot2]: src/imgs/project-view2.png
+[product-screenshot]: src/images/project-view1.png
+[product-screenshot2]: src/images/project-view2.png
+[product-screenshot3]: src/images/project-view3.png
+[product-screenshot4]: src/images/project-view4.png
 [product-link]: https://devtruce.github.io/fylo/
 
 <!-- ## Tech & Tools ## -->
