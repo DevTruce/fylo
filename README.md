@@ -18,7 +18,7 @@
 <h3 align="center">Fylo Landing Page</h3>
 
   <p align="center">
-    completed frontend mentor challenge
+    A polished, responsive Fylo landing page layout.
     <br />
     <br />
     <a href="https://devtruce.github.io/fylo/" target="_blank">View Demo</a>
